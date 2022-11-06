@@ -77,7 +77,7 @@ function DynamicTable.new(tab)
 	self._changedEvent = changedEvent
 	self._changed = changedEvent.Event
 
-	for index, value in next, tab do
+	for index, value in tab do
 		local valueType = type(value)
 		if valueType == "table" then
 			local dynamicTable = DynamicTable.new(value)
@@ -96,7 +96,7 @@ end
 function DynamicTable:Serialize()
 	local copy = self._copy
 	local serialized = {}
-	for index, value in next, copy do
+	for index, value in copy do
 		if type(value) == "table" then
 			serialized[index] = value:Serialize()
 		else
@@ -108,7 +108,7 @@ end
 
 function DynamicTable:Destroy()
 	local copy = self._copy
-	for index, value in next, copy do
+	for index, value in copy do
 		if type(value) == "table" then
 			value:Destroy()
 		end
