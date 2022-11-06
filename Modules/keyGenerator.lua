@@ -1,6 +1,17 @@
 local letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz][_|/#$%&*()"
 local nums = "1234567890"
 
+--[[
+Generates a random string 
+
+usage eg.
+
+local keyGenerator = require(pat.to.this.module)
+local key = keyGenerator(key lenght: optional)
+print('New key generated: '..key)
+
+]]
+
 return function(n)
 	local t = {}
 	if n == nil then n = math.random(6, 15) end
