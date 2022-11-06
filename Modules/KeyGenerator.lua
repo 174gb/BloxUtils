@@ -1,7 +1,7 @@
-local letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz][_|/#$%&*()"
-local nums = "1234567890"
 
 --[[
+@Made by 174gb
+
 Generates a random string 
 
 usage eg.
@@ -11,6 +11,10 @@ local key = keyGenerator(key lenght: optional)
 print('New key generated: '..key)
 
 ]]
+
+
+local letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz][_|/#$%&*()"
+local nums = "1234567890"
 
 return function(n)
 	local t = {}
