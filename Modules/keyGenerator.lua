@@ -1,4 +1,4 @@
-local letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz][_|\/#$%&*()"
+local letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz][_|/#$%&*()"
 local nums = "1234567890"
 
 return function(n)
