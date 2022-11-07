@@ -1,9 +1,4 @@
 --[[
-@Made by 174gb
-
-Detect when a table is changed
-
-usage eg
 local DynamicTable = require(path.to.this.module)
 
 local PlayerTable = DynamicTable.new({
@@ -22,9 +17,7 @@ end)
 PlayerTable.Age = 26 --> Output: PlayerTable Changed: Age: 26
 task.wait(1)
 PlayerTable.Personality.Humor = 'Bad' --> Output: PlayerTable Changed: Personality/Humor: Bad
-
 ]]
-
 
 local DynamicTable = {}
 DynamicTable.ClassName = "DynamicTable"
