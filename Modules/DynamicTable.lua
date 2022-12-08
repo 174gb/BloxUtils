@@ -2,7 +2,7 @@
 local DynamicTable = require(path.to.this.module)
 
 local PlayerTable = DynamicTable.new({
-	Name = 'John',
+  Name = 'John',
   Age = 25,
   
   Personality = {
